@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type = "text/css" href="./css/aboutus_style.css">
+	<link rel="stylesheet" type = "text/css" href="./css/index_style.css">
+	<title>About Us</title>
+
+	<!--Links for the fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id = "header-top">
+			<img src="../Images/companylogo.png" alt="" id = "header-logo">
+			<button id = "header-btn">
+				<img src="../Images/triangle_button.svg" alt="">
+			</button>
+		</div>
+		<nav id = "header-menu">
+			<ul>
+				<li><a href="index.html" class = "nav-option">Shop</a></li>
+				<li><a href="aboutus.html" class = "nav-option">About us</a></li>
+				<li><a href="" class = "nav-option">Carrito</a></li>
+				<li><a href="" class = "nav-option">Iniciar Sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id = "conocenos">
+		<img src="../Images/impresora3d.jpg" alt="">
+		<div class="information-part" id="first-information-part">
+			<h2>¿Quienes somos?</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit accusamus error. Animi nihil incidunt ab soluta, omnis, voluptas, nostrum harum perferendis quas numquam laboriosam dolorem placeat nemo porro blanditiis!</p>
+		</div>
+		<div class="information-part">
+			<h2>¿Que producto ofrecemos?</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit accusamus error. Animi nihil incidunt ab soluta, omnis, voluptas, nostrum harum perferendis quas numquam laboriosam dolorem placeat nemo porro blanditiis!</p>
+		</div>
+		<div class="information-part">
+			<h2>¿Materiales, impresión y envio?</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit accusamus error. Animi nihil incidunt ab soluta, omnis, voluptas, nostrum harum perferendis quas numquam laboriosam dolorem placeat nemo porro blanditiis!</p>
+		</div>
+	</section>
+
+	<script>
+		const buttom = document.getElementById("header-btn");
+		const header_menu = document.getElementById("header-menu");
+		buttom.addEventListener('click',()=>{
+			if(header_menu.style.display != 'block'){
+				header_menu.style.display = 'block'
+				buttom.style.transform = 'rotate(180deg)'
+			}
+			else{
+				header_menu.style.display = 'none'
+				buttom.style.transform = 'rotate(90deg)'
+			}
+		})
+	</script>
+</body>
+</html>

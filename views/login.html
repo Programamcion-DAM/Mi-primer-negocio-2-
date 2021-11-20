@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="./css/login_style.css">
+    <title>Log In or Sing In</title>
+</head>
+<body>
+    <div id = "card">
+        <div id = "login_card">
+            <h1 class = "card_text">Inicia sesión con tu cuenta</h1>
+            <input type="text" placeholder="Nombre de usuaro" id = "name_field" class = "text_field_login">
+            <input type="password" placeholder = "Contraseña" id = "password_field" class = "text_field_login">
+            <button class = "btn" id = "btn_login">Login</button>
+            <span class = "btn_change_mode" onClick="change_mode()">Si aun tienes cuenta, pulsa aquí para registrarte.</span>
+        </div>
+        <div id = "register_card">
+            <h1 class = "card_text">Registrate</h1>
+            <input type="text" placeholder="Nombre de usuaro" id = "register_name_field" class = "text_field_register">
+            <input type="text" placeholder = "Correo electronico" id = "email_field" class = "text_field_register">
+            <input type="text" placeholder = "Contraseña" id = "register_password_field" class = "text_field_register">
+            <input type="text" placeholder = "Confirmar contraseña" id = "confirm_password_field" class = "text_field_register">
+            <button class = "btn" id = "btn_register">Register</button>
+            <span class = "btn_change_mode" onClick="change_mode()">Si ya tienes una cuenta, inicia sesión aqui.</span>
+        </div>
+    </div>
+
+    <script>
+        var login_card =document.getElementById("login_card");
+        var register_card =document.getElementById("register_card");
+        var mode = True;
+        function change_mode(){
+            mode = !mode;
+            if(mode){
+                login_card.style.display = "none";
+                register_card.style.display = "block";
+            }
+            else{
+                login_card.style.display = "block";
+                register_card.style.display = "none";
+            }
+        }
+    </script>
+    <script src="./js/functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgb(220,240,240);
+}
+
+#card{
+    width: 90%;
+    max-width: 500px;
+    height: 70vh;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    border-radius: 30px;
+}
+
+#login_card{
+    display: block;
+}
+
+.card_text{
+    font-size: 2em;
+    color:rgb(70,220,190);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.text_field_login{
+    display: block;
+    height: 6vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+    padding-left: 2px;
+}
+
+.btn{
+    margin-top: 5vh;
+    height: 6vh;
+    width: 50%;
+    margin-left: 25%;
+    background: rgb(70,220,190);
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    border:none;
+}
+
+.btn_change_mode{
+    display: block;
+    margin-top: 1.5vh;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:rgb(50, 150, 130);
+}
+
+#register_card{
+    display: none;
+}
+
+.text_field_register{
+    display: block;
+    height: 5vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3vh;
+    padding-left: 2px;
+}
+
+@media screen and (min-width: 768px){  
+    .card_text{
+        font-size: 3em;
+    }
+}

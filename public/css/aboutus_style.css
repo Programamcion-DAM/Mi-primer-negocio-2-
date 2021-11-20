@@ -1,0 +1,52 @@
+#conocenos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#conocenos > img{
+	width: 100%;
+}
+
+.information-part{
+	font-family:'Source Code Pro', monospace;
+	width: 92%;
+	margin-top: 25px;
+	padding: 4%;
+}
+
+.information-part > h2{
+	color: #329b93;
+	font-size: 1.7em;
+}
+
+.information-part > p{
+	color: #72c8c1;
+	font-size: 1.1em;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 780px){
+	#conocenos > img{
+		width: 40%;
+	}
+
+	#first-information-part{
+		width: 56%;
+		margin-top: 40px;
+		padding: 2%;
+	}
+
+	.information-part{
+		width: 100%;
+		padding: 1%;
+	}
+
+	.information-part > h2{
+		font-size: 3em;
+	}
+
+	.information-part > p{
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+}

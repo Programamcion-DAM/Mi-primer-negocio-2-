@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type = "text/css" href="./css/index_style.css">
+	<title>Impresiones 3D</title>
+
+
+	<!--Links for the fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id = "header-top">
+			<img src="../Images/companylogo.png" alt="" id = "header-logo">
+			<button id = "header-btn">
+				<img src="../Images/triangle_button.svg" alt="">
+			</button>
+		</div>
+		<nav id = "header-menu">
+			<ul>
+				<li><a href="index.html" class = "nav-option">Shop</a></li>
+				<li><a href="/aboutus" class = "nav-option">About us</a></li>
+				<li><a href="#" class = "nav-option">Carrito</a></li>
+				<li><a href="/login" class = "nav-option">Iniciar Sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id = "design-part">
+		<h1 class="text-title" id ="yourdesing-title">Imprime tus diseños 3D favoritos</h1>
+		<section id = "print-your-own-desing">
+			<div id = "print-card">
+				<p>Sube o arrastra tu diseño aquí</p>
+			</div>
+	</section>
+	</section>
+
+	<section id="purchase-desing">
+		<h2 class="text-title" id="predesing-title">IMPRIMA FORMAS YA DISEÑADAS</h2>
+		<div id = "card-shows">
+			<div class = "desing-card">
+				<img src="../Images/diseño3dtemporal.jpg" alt="">
+				<h3>Caballo blanco</h3>
+				<h4>7.99 EUR</h4>
+				<p>Una figura diseñada e impresa en 3 dimensiones con forma
+				   de caballo. El interiror se encuentra hueco y su color es
+				   blanco.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dapoyotablet.jpg" alt="">
+				<h3>Apoyo para tablet</h3>
+				<h4>4.99 EUR</h4>
+				<p>Un resistente apoyo para apoyar los distintos dispositibos tablet
+				. Es compatible con todas las tablets debido a su adaptabilidad.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dcolgadorducha.jpg" alt="">
+				<h3>Colgador ducha</h3>
+				<h4>4.99 EUR</h4>
+				<p>Una fantástica y comoda idea para colgar las toallas
+				en el baño de forma que no moleste. Muy resistente, soportara
+				todo tipo de toallas. </p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dmacetafeliz.jpg" alt="">
+				<h3>Maceta feliz</h3>
+				<h4>7.99 EUR</h4>
+				<p>Un entretenido y bonito diseño para guardar ahí
+					las distinas plantas y que crezcan.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dyoda.jpg" alt="">
+				<h3>Bebe Yoda</h3>
+				<h4>2.99 EUR</h4>
+				<p>La adorable figura de Bebe Yoda de la película 
+				 Star Wars. Muy recomentable para una colección o
+				decorción minimalista.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dsoportemovil.jpg" alt="">
+				<h3>Soporte Movil</h3>
+				<h4>4.99 EUR</h4>
+				<p>Un comodo soporte para apoyar tu dispositivo
+				movil. Es compatible con todos los telefonos y 
+				cuenta un espacio para poder cagar el smartphone 
+				mientras este apoyado.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3djarron.jpeg" alt="">
+				<h3>Jarrón</h3>
+				<h4>5.99 EUR</h4>
+				<p>Humilde y minimalista jarrón con una gran capacidad
+				de almacenamineto. Ideal para decadorado de salones o 
+			    habitaciones.</p>
+			</div>
+
+			<div class = "desing-card">
+				<img src="../Images/diseño3dsoportereloj.jpeg" alt="">
+				<h3>Soporte Reloj</h3>
+				<h4>4.99 EUR</h4>
+				<p>Comodo soporte para el cargador de su reloj inteligente.Solo
+				compatible con el Apple Watch.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footerContent">
+			<h5>INFORMACION</h5>
+			<a href="#">Política de Contenido</a>
+			<a href="#">Política de Protección de Datos</a>
+			<a href="#">Política de Privacidad</a>
+			<a href="#">Terminos de Uso</a>
+		</div>
+		<div class="footerContent">
+			<h5>LINKS</h5>
+			<a href="#">About us</a>
+			<a href="#">Buscar diseños</a>
+			<a href="#">Guardar diseños</a>
+		</div>
+		<div class="footerContent">
+			<h5>FOLLOW US</h5>
+			<a href="#">Instagram</a>
+			<a href="#">Twitter</a>
+			<a href="#">Activa notificaciones</a>
+		</div>
+		<div class="footerContent">
+			<h5>I3D</h5>
+			<p>Una empresa dedicada a la impresión de 
+			 diñesos en 3D a un costo muy económico.</p>
+		</div>
+	</footer>
+
+	<script>
+		const buttom = document.getElementById("header-btn");
+		const header_menu = document.getElementById("header-menu");
+		buttom.addEventListener('click',()=>{
+			if(header_menu.style.display != 'block'){
+				header_menu.style.display = 'block'
+				buttom.style.transform = 'rotate(180deg)'
+			}
+			else{
+				header_menu.style.display = 'none'
+				buttom.style.transform = 'rotate(90deg)'
+			}
+		})
+	</script>
+
+</body>
+</html>
